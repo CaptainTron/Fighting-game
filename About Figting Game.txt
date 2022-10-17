@@ -1,0 +1,47 @@
+// Project Build by Vaibhav Yadav.
+// Project duration about 5-6 days.
+// Used Class and its method and implemented  it to the game. 
+// Created dynamic function that will update values in real time and display the result on DOM.
+// Used short audio files in the game, such as sound will be produced when player punch each other and also when they heal.
+// Used event Listener methods to grab the keys (keydown event) pressed in game and perform method according to it.
+
+// About The Game
+
+This is Simple Fighting Game build using HTML, CSS and Javascript.
+
+This game consist of two players(player 1 and player 2), initially both of this player given initial health of 100 and default damage of 10 & 5 respectively.
+
+You will have two buttons, q-attack & a-heal for player 1 and same attack(e) & heal(d) for player 2 also. In this game you have to knock down your opponent player(Ex. You have to level down the health level of your opponent to equal to or below zero ) and once you do you will be declared as winner with victory sound.
+
+// Javascript Code used 
+
+I have used getElementById method to find the HTML elements and give a variable name with 'const' datatype
+
+Created UpdateGame function that takes p1, p2, gamestate as parameter and Update the content to the DOM content, also check wheather gamestate is must true otherwise gameisover will be true and winner will be declared.  
+
+Create class player with constructor method and taking properties name, health, attackDamage
+then creating class method:-
+strike(player,enemy,attackDamage) that will take attacker attackDamage add its value to random number between 0 and attackDamage, substract the enemy health from the RandomattackDamage
+update the DOM content of both player 1 and player 2 with updateGame function and finally return the message
+
+heal(player):- that will just take player as parameter and update the its health to random numbers between 1 and 5 and ceil down to nearest integer, update the health and call updateGame function and passing p1, p2, game.isOver and return message player name and health increased by upto what amount
+
+Create another class Game with method constructor, set isOver = false
+This isOver value will be used to determine wheather game will be finished or not Ex. it will be used to check wheather the game is finished or not(Ex one of the player <=0 or not )
+declareWinner(isOver, p1, p2) declare winner and return the message who is winner by comparing isOve to false and health of each player <=0
+play the victory sound  and return the msg 
+
+reset(p1,p2) will reset the all the health to 100(default) and change isOver to false so that player can replay the game as many time they want.
+play(p1,p2) will automatically play the game on each other and end the game and finally declare the winner.
+
+Created player1 and player2 object using class player
+
+update the DOM content using updateGame(p1, p2, Game.isOver)
+Declare game variable and Give Game() property to it
+
+add eventlistener method ".addEventListener" used keydown event and check whick key is pressed and perform action according to it.
+also check health >=0 and game.isOver == false
+and play sound of wheather to attack or heal 
+Used the above eventlistener method for all the 4 buttons(q & a for player1, e & d for player2) and played the respective sound according to it.
+
+                  ---------------------------------------------------------- END ---------------------------------------------------------

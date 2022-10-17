@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    color: wheat;
+    font-family: sans-serif;
+    padding: 0;
+    font-weight: bolder;
+}
+html{
+    background: url(backimaga.jpg) no-repeat center;
+    background-position: fixed;
+    background-size: cover;
+}
+.playercontainer{
+    display: flex;   
+}
+h2{
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+/* Player1 Styling Container starts here */
+.player1{
+    backdrop-filter: blur(5px);
+    /* background-color: wheat; */
+    margin:0 0 0 29%;
+    padding: 1%;
+    height: 5%;
+    border-radius: 5%;
+
+}
+.player1controls{
+    margin: 7%;
+    display: flex;
+}
+.player1controls div{
+    padding: 1vh;
+    text-align: center;
+}
+.player1controls button{
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px double black;
+    color: wheat;
+}
+.player1controls button:hover{
+    background-color: wheat;
+    color: black;
+}
+.p1Health{
+    font-size: 160%;
+    text-align: center;
+    padding: 1vh;
+}
+#playsimulate{
+    border: 1px solid black;
+    color: wheat;
+    border-radius: 3px;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 20% 0 0 0;
+    height: 4%;
+}
+/* Player 2 Styling starts here */
+.player2{
+    border-radius: 5%;
+    backdrop-filter: blur(5px);
+    /* background-color: lightblue; */
+    padding:0 0% 0 0;
+    text-align: center;
+}
+.player2 img{
+    height: 48%;
+}
+.player2controls{
+    margin: 0 0 0 28%;
+}
+#showresult{
+    text-align: center;
+    font-size: 50px;
+}
+#resetbutton{
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: transparent;
+    color: wheat;
+    cursor: pointer;
+    margin: 20% 0 0 0;
+    height: 4%;
+}

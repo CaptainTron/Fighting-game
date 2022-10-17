@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting Game</title>
+</head>
+<body>
+    <div class="playercontainer">
+    <div class="player1">
+        <h2 id="Player1" class="Player1">Player 1</h2>
+        <img id="p1" src="https://i.gifer.com/origin/00/0019f6845ceaa9347b881ccbe8f5644a_w200.gif" alt=""/>
+
+        <div class="player1controls">
+            <div class="AttackDiv">
+                <span>Q:</span>
+                <button>Attack</button>
+            </div>
+            <div class="HealDiv">
+                <span>A:</span>
+                <button>Heal</button>
+            </div>
+        </div>
+        <hr>
+        <div id="p1Health" class="p1Health">100</div>
+    </div>
+    
+    <button id="playsimulate">Simulate</button>
+    <button id="resetbutton">Reset</button>
+
+    <div class="player2">
+        <h2 id="Player2" class="Player1">Player 2</h2>
+        <img id="p2" src="https://i.gifer.com/XOsX.gif" alt=""/>
+
+        <div class="player1controls player2controls">
+            <div class="AttackDiv">
+                <span>E:</span>
+                <button>Attack</button>
+            </div>
+            <div class="HealDiv">
+                <span>D:</span>
+                <button>Heal</button>
+            </div>
+        </div>
+        <hr>
+        <div id="p2Health" class="p1Health">100</div>
+    </div>
+</div>
+    <!-- <div class="showresult" id="showresult">Heelljasfdjafj</div> -->
+    <audio id="p1attack" src="fastpunch.mp3"></audio>
+    <audio id="p1heal" src="fastheal.mp3"></audio>
+    <audio id="p2attack" src="quickhit.mp3"></audio>
+    <audio id="p2heal" src="quickheal.mp3"></audio>
+    <audio id="victory" src="victory.mp3"></audio>
+
+    <script src="Gameengine.js"></script>
+</body>
+</html>
